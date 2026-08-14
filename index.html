@@ -1528,6 +1528,104 @@
     letter-spacing: 0.2em;
     text-transform: uppercase;
   }
+
+  /* ── Instagram caption cards ── */
+  .cap {
+    border: 1px solid var(--rule-2);
+    border-radius: 3px;
+    background: var(--bg-card);
+    margin: 18px 0;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .cap-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+    background: var(--bg-2);
+    border-bottom: 1px solid var(--rule);
+  }
+  .cap-ver {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    background: var(--forest);
+    color: #F6F1E6;
+    padding: 3px 9px;
+    border-radius: 2px;
+  }
+  .cap-name { font-size: 13.5px; font-weight: 700; color: var(--ink); }
+  .cap-ic { margin-left: auto; font-size: 16px; }
+  .cap-hook {
+    padding: 16px 18px 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.55;
+    color: var(--forest-2);
+  }
+  .cap-body {
+    padding: 10px 18px 0;
+    font-size: 13.5px;
+    line-height: 1.85;
+    white-space: pre-line;
+    word-break: keep-all;
+    color: var(--ink-2);
+  }
+  .cap-foot {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    margin-top: 18px;
+    border-top: 1px solid var(--rule);
+    background: var(--bg-2);
+  }
+  .cap-tgt { font-size: 11.5px; color: var(--ink-3); }
+  .cap-btn {
+    margin-left: auto;
+    background: var(--forest);
+    color: #F6F1E6;
+    border: 0;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 9px 22px;
+    cursor: pointer;
+    transition: background 0.18s;
+  }
+  .cap-btn:hover { background: var(--forest-2); }
+  .cap-btn:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+  .cap-btn.done { background: var(--gold-2); }
+  #copy-ta {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+    border: 0;
+    font-size: 12px;
+  }
+  .toast {
+    position: fixed;
+    left: 50%;
+    bottom: 34px;
+    transform: translateX(-50%) translateY(14px);
+    background: var(--forest);
+    color: #F6F1E6;
+    font-size: 13px;
+    padding: 11px 24px;
+    border-radius: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s, transform 0.22s;
+    z-index: 999;
+    white-space: nowrap;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 </style>
 </head>
 <body>
@@ -1546,6 +1644,7 @@
     <a href="#types">두피 유형별</a>
     <a href="#homecare">홈케어 루틴</a>
     <a href="#faq">전문가 FAQ</a>
+    <a href="#captions">인스타 캡션</a>
   </div>
 </nav>
 
@@ -3224,8 +3323,146 @@
   </section>
 
   <!-- COMPLIANCE -->
+  <!-- 8. INSTAGRAM CAPTIONS -->
+  <section id="captions">
+    <h2>VIII. 인스타그램 피드 캡션 4종</h2>
+    <span class="display-en">Copy &amp; paste — compliance-checked</span>
+
+    <p class="lead">
+      원장님 계정에 <strong>그대로 올리실 수 있는</strong> 두피 케어 전용 캡션입니다.
+      <strong>복사하기</strong>를 누르면 훅 문장과 본문이 한 번에 복사됩니다.
+      별도 수정 없이 바로 게시하셔도 됩니다.
+      모든 문구는 화장품 표시·광고법과 공중위생관리법 범주 안에서 작성되었습니다.
+    </p>
+
+    <div class="cap">
+      <div class="cap-head"><span class="cap-ver">VER 1</span><span class="cap-name">과학 권위형</span><span class="cap-ic">🔬</span></div>
+      <div class="cap-hook">독사 어금니에서 배운 흡수의 과학, 이제 두피까지 🐍</div>
+      <div class="cap-body">🐍 독사는 힘으로 독을 밀어 넣지 않습니다.
+어금니 표면의 미세한 홈을 따라
+모세관력만으로 액체가 스스로 이동하죠.
+
+💡 이 원리를 두피 케어에 옮겨 온 것이
+닥터배 마이크로젝션입니다.
+
+🧱 좋은 앰플을 발라도, 두피 각질층은 본래
+외부 물질을 막도록 만들어진 조직이에요.
+모발까지 빽빽한 두피에서는
+성분이 겉돌다 마르기 더 쉽습니다.
+
+✨ 그래서 '무엇을 바르는가' 만큼
+'어떻게 전달하는가'가 중요합니다.
+
+📄 국제 학술지 Science Translational Medicine에 게재된
+닥터배 교수 연구실의 과학적이고 최신의 피부흡수 기술을
+이제 두피 케어로 저희 샵에서 직접 경험해 보세요.
+
+💬 문의는 DM으로 해주세요.
+
+🔬 기술 개발 · 연구 @dr.bae_medical</div>
+      <div class="cap-foot"><span class="cap-tgt">타겟 · 근거를 중시하는 고객 · 두피 프로그램 소개 게시물</span><button class="cap-btn" onclick="copyCap(this)">복사하기</button></div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-head"><span class="cap-ver">VER 2</span><span class="cap-name">원리 교육형</span><span class="cap-ic">📖</span></div>
+      <div class="cap-hook">두피 앰플, 바르기만 하면 어디까지 갈까요?</div>
+      <div class="cap-body">🧱 펩타이드·세포외소포 같은 분자는
+두피 각질층을 통과하기가 쉽지 않아요.
+
+각질세포와 세포간지질이 벽돌과 회반죽처럼
+촘촘히 쌓여 외부 물질을 막고 있으니까요.
+게다가 두피는 모발에 가려
+액체가 흘러내리거나 겉돌기 쉽죠.
+
+🔎 마이크로젝션이 하는 일 :
+
+1️⃣ 가르마 라인에 빈틈없이 밀착 (Micro-Stamping)
+수백 개의 미세 구조가 두피 굴곡까지 고르게 닿습니다
+
+2️⃣ 모세관력 발생 (Capillary Guiding)
+각질세포 사이의 본래 경로를 따라 성분을 유도합니다
+
+3️⃣ 자연스럽게 스며듦 (Micro-Infusion)
+누르는 동안 액체 스스로의 힘으로 전달됩니다
+
+💧 펩타이드 9종과 병풀캘러스세포외소포를 담은
+블랙 포 스칼프 앰플이 이렇게 전달됩니다.
+각질층을 손상시키지 않고
+두피가 본래 가진 길을 활용하는 흡수 루틴이에요.
+
+💬 문의는 DM으로 해주세요.
+
+🔬 기술 개발 · 연구 @dr.bae_medical</div>
+      <div class="cap-foot"><span class="cap-tgt">타겟 · 성분과 원리가 궁금한 고객 · 정보성 게시물</span><button class="cap-btn" onclick="copyCap(this)">복사하기</button></div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-head"><span class="cap-ver">VER 3</span><span class="cap-name">안심 설계형</span><span class="cap-ic">🛡</span></div>
+      <div class="cap-hook">뚫지 않습니다. 눌러서 스며들게 합니다.</div>
+      <div class="cap-body">🛡 마이크로젝션은 두피를 찌르거나 뚫지 않습니다.
+
+✅ 비침습 설계
+끝단이 평평하게 가공되어 각질층을 관통하지 않습니다
+
+✅ 공산품으로 분류된 미용 디바이스
+의료기기가 아니며, 의료행위와 무관합니다
+
+✅ 법이 정한 사용 방식 그대로
+화장품법이 정한 '바르고·누르는' 방식으로,
+공중위생관리법상 피부미용업 범위 안에서 사용합니다
+
+✅ 위생 관리
+스탬프는 1회용이라 고객님 앞에서 새로 개봉합니다
+
+🐍 상처도, 출혈도, 통증도 없이
+모세관력으로 성분의 흡수를 돕는 방식이에요.
+두피 케어가 처음이셔도 안심하고 받으셔도 됩니다.
+
+💬 문의는 DM으로 해주세요.
+
+🔬 기술 개발 · 연구 @dr.bae_medical</div>
+      <div class="cap-foot"><span class="cap-tgt">타겟 · 시술 부담·안전성이 걱정되는 고객</span><button class="cap-btn" onclick="copyCap(this)">복사하기</button></div>
+    </div>
+
+    <div class="cap">
+      <div class="cap-head"><span class="cap-ver">VER 4</span><span class="cap-name">감성 공감형</span><span class="cap-ic">✨</span></div>
+      <div class="cap-hook">정수리 볼륨, 사진 찍을 때마다 신경 쓰이시나요?</div>
+      <div class="cap-body">💧 좋은 두피 앰플도, 모발에 가려
+두피에 닿지 못하고 겉돌기 쉬워요.
+
+🙋 저희 샵에서 가장 많이 듣는 말씀이
+"두피가 이렇게 가볍고 시원한 느낌은 처음이에요" 랍니다.
+
+✨ 고객님 앞에서 개봉하는 블랙 포 스칼프 앰플을
+마이크로젝션으로 가르마 라인부터 꾹꾹 눌러 담는
+프리미엄 두피 케어의 차이예요.
+
+👉 밀착하고 → 머물고 → 자연스럽게 스며드는
+3단계 흡수 루틴으로 모발 볼륨감까지 케어합니다.
+
+🏠 홈케어는 무황산염 엑소토카인 샴푸 하나로 심플하게.
+
+🐍 찌르지 않아요. 눌러서 머금게 해요.
+오늘, 당신의 두피 루틴이 달라집니다.
+
+💬 문의는 DM으로 해주세요.
+
+🔬 기술 개발 · 연구 @dr.bae_medical</div>
+      <div class="cap-foot"><span class="cap-tgt">타겟 · 일반 고객 · 후기 및 릴스 연동</span><button class="cap-btn" onclick="copyCap(this)">복사하기</button></div>
+    </div>
+
+    <div class="callout clay">
+      <span class="callout-title">⛔ 게시 전 마지막 확인</span>
+      캡션을 변형하시더라도 다음은 넣지 마십시오 —
+      <strong>주입 · 뚫는다 · 채널 생성 · 장벽을 연다 · 재생 · 치료 · 항염 · 발모 · 탈모 방지/치료 · 지루성 피부염 등 질환명 · 엑소좀(단독)</strong>.
+      그리고 <strong>MTS·주사·타 시술을 지목해 비교하는 구도</strong>도 피해 주십시오.
+      우리의 강점은 남을 깎아서가 아니라 <strong>비침습 설계와 법적 근거</strong>로 설명될 때 가장 안전하고 강합니다.
+      사진 한 장과 문구 한 줄만으로도 민원의 근거가 될 수 있습니다.
+    </div>
+  </section>
+
   <section class="compliance">
-    <h3>VIII. 표시·광고 준수 요약 · Regulatory Summary</h3>
+    <h3>IX. 표시·광고 준수 요약 · Regulatory Summary</h3>
     <p>본 자료는 <strong>화장품 표시·광고법</strong>, <strong>공중위생관리법</strong>, <strong>의료법</strong> 범주를 준수하여 작성된 <em>에스테틱 전문가 교육용</em> 문서입니다. 이하의 표현 규정은 어떠한 매체(샵 내 안내·SNS·블로그·영업 자료)에서도 동일하게 적용됩니다.</p>
     <div class="lang">
       <div>
@@ -3262,6 +3499,9 @@
 
 </main>
 
+<textarea id="copy-ta" readonly aria-hidden="true" tabindex="-1"></textarea>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 <script>
   document.querySelectorAll('.acc-head').forEach(function(head) {
     head.addEventListener('click', function() {
@@ -3272,7 +3512,57 @@
     });
   });
 
-
+  /* ── Instagram caption copy ── */
+  function capText(card) {
+    return [card.querySelector('.cap-hook').textContent.trim(),
+            '',
+            card.querySelector('.cap-body').textContent.trim()].join('\n');
+  }
+  function toast(msg) {
+    var t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(function() { t.classList.remove('show'); }, 2100);
+  }
+  function markDone(btn) {
+    var o = btn.textContent;
+    btn.textContent = '복사됨 ✓';
+    btn.classList.add('done');
+    setTimeout(function() { btn.textContent = o; btn.classList.remove('done'); }, 2000);
+  }
+  function legacyCopy(text) {
+    var ta = document.getElementById('copy-ta');
+    ta.value = text;
+    ta.removeAttribute('readonly');
+    ta.focus();
+    if (/ipad|iphone|ipod/i.test(navigator.userAgent)) {
+      var r = document.createRange(); r.selectNodeContents(ta);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      ta.setSelectionRange(0, text.length);
+    } else {
+      ta.select();
+    }
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    ta.setAttribute('readonly', 'readonly');
+    window.getSelection().removeAllRanges();
+    ta.blur();
+    return ok;
+  }
+  function copyCap(btn) {
+    var text = capText(btn.closest('.cap'));
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function() {
+        markDone(btn); toast('캡션이 복사되었습니다');
+      }).catch(function() {
+        if (legacyCopy(text)) { markDone(btn); toast('캡션이 복사되었습니다'); }
+        else { toast('복사에 실패했습니다. 캡션을 길게 눌러 직접 선택해 주세요'); }
+      });
+    } else {
+      if (legacyCopy(text)) { markDone(btn); toast('캡션이 복사되었습니다'); }
+      else { toast('복사에 실패했습니다. 캡션을 길게 눌러 직접 선택해 주세요'); }
+    }
+  }
 </script>
 
 </body>
