@@ -26,22 +26,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F6F1E6;
-    --bg-2: #EFE7D4;
-    --bg-card: #FBF7EC;
-    --ink: #12231B;
-    --ink-2: #2E3D34;
-    --ink-3: #5D6A60;
-    --forest: #0F3B2E;
-    --forest-2: #1E5A45;
-    --forest-3: #2E7A5E;
-    --moss: #6B8A5A;
-    --gold: #B8904A;
-    --gold-2: #8E6A2E;
-    --clay: #A14E35;
-    --rule: rgba(18, 35, 27, 0.14);
-    --rule-2: rgba(18, 35, 27, 0.28);
-    --shadow: 0 1px 2px rgba(15,59,46,0.04), 0 10px 32px -12px rgba(15,59,46,0.12);
+    --bg: #FAF8F4;
+    --bg-2: #F1EDE5;
+    --bg-card: #FFFFFF;
+    --ink: #16181F;
+    --ink-2: #2E313B;
+    --ink-3: #6E7076;
+    --forest: #16181F;
+    --forest-2: #C62B36;
+    --forest-3: #A02028;
+    --moss: #2F6B4F;
+    --gold: #9C7F42;
+    --gold-2: #8A5A12;
+    --clay: #C62B36;
+    --rule: rgba(22, 24, 31, 0.14);
+    --rule-2: rgba(22, 24, 31, 0.28);
+    --shadow: 0 1px 2px rgba(22,24,31,0.04), 0 10px 32px -12px rgba(22,24,31,0.12);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -55,8 +55,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image:
-      radial-gradient(circle at 10% 0%, rgba(107,138,90,0.10) 0%, transparent 35%),
-      radial-gradient(circle at 95% 85%, rgba(184,144,74,0.08) 0%, transparent 40%);
+      radial-gradient(circle at 10% 0%, rgba(47,107,79,0.10) 0%, transparent 35%),
+      radial-gradient(circle at 95% 85%, rgba(156,127,66,0.08) 0%, transparent 40%);
     background-attachment: fixed;
   }
   /* Watermark */
@@ -65,13 +65,13 @@
     top: 0;
     z-index: 100;
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     padding: 8px 20px;
     font-size: 11.5px;
     letter-spacing: 0.12em;
     text-align: center;
     font-weight: 500;
-    border-bottom: 1px solid rgba(184,144,74,0.4);
+    border-bottom: 1px solid rgba(156,127,66,0.4);
   }
   .watermark-top span {
     color: var(--gold);
@@ -82,7 +82,7 @@
     position: sticky;
     top: 33px;
     z-index: 99;
-    background: rgba(246, 241, 230, 0.94);
+    background: rgba(250, 248, 244, 0.94);
     backdrop-filter: blur(10px);
     border-bottom: 0.5px solid var(--rule);
     padding: 12px 0;
@@ -177,7 +177,7 @@
 
   /* HERO */
   .hero {
-    background: linear-gradient(180deg, rgba(15,59,46,0.03), transparent);
+    background: linear-gradient(180deg, rgba(22,24,31,0.03), transparent);
     border: 1px solid var(--rule);
     border-radius: 2px;
     padding: 56px 48px;
@@ -233,7 +233,7 @@
     border-radius: 2px;
     overflow: hidden;
     background: var(--forest);
-    box-shadow: 0 2px 24px -8px rgba(15,59,46,0.25);
+    box-shadow: 0 2px 24px -8px rgba(22,24,31,0.25);
   }
   .hero-banner img {
     width: 100%;
@@ -247,7 +247,7 @@
     position: absolute;
     inset: auto 0 0 0;
     height: 55%;
-    background: linear-gradient(180deg, transparent 0%, rgba(18,35,27,0.35) 45%, rgba(18,35,27,0.88) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(22,24,31,0.35) 45%, rgba(22,24,31,0.88) 100%);
     pointer-events: none;
   }
   .hero-banner figcaption {
@@ -270,7 +270,7 @@
     text-transform: uppercase;
     margin-bottom: 8px;
     padding-bottom: 5px;
-    border-bottom: 1px solid rgba(184,144,74,0.6);
+    border-bottom: 1px solid rgba(156,127,66,0.6);
   }
   .hero-banner .banner-text {
     display: block;
@@ -283,7 +283,7 @@
   .hero-banner .banner-sub {
     display: block;
     font-size: 13px;
-    color: rgba(246,241,230,0.8);
+    color: rgba(250,248,244,0.8);
     margin-top: 6px;
     font-weight: 400;
   }
@@ -301,7 +301,7 @@
     border-radius: 2px;
     overflow: hidden;
     background: var(--bg-card);
-    box-shadow: 0 2px 18px -10px rgba(15,59,46,0.22);
+    box-shadow: 0 2px 18px -10px rgba(22,24,31,0.22);
   }
   .section-banner img {
     width: 100%;
@@ -315,7 +315,7 @@
     position: absolute;
     inset: auto 0 0 0;
     height: 45%;
-    background: linear-gradient(180deg, transparent 0%, rgba(18,35,27,0.35) 40%, rgba(18,35,27,0.85) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(22,24,31,0.35) 40%, rgba(22,24,31,0.85) 100%);
     pointer-events: none;
   }
   .section-banner figcaption {
@@ -338,7 +338,7 @@
     text-transform: uppercase;
     margin-bottom: 6px;
     padding-bottom: 4px;
-    border-bottom: 1px solid rgba(184,144,74,0.6);
+    border-bottom: 1px solid rgba(156,127,66,0.6);
   }
   .section-banner .banner-text {
     display: block;
@@ -351,7 +351,7 @@
   .section-banner .banner-sub {
     display: block;
     font-size: 12.5px;
-    color: rgba(246,241,230,0.8);
+    color: rgba(250,248,244,0.8);
     margin-top: 5px;
     font-weight: 400;
   }
@@ -373,7 +373,7 @@
     border-radius: 0 2px 2px 0;
   }
   .callout.forest { border-left-color: var(--forest); }
-  .callout.clay { border-left-color: var(--clay); background: #F3E6DE; }
+  .callout.clay { border-left-color: var(--clay); background: #FBEDEE; }
   .callout-title {
     font-family: 'Noto Serif KR', serif;
     font-weight: 700;
@@ -493,7 +493,7 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, rgba(93,106,96,0.4) 0%, var(--gold) 50%, var(--forest) 100%);
+    background: linear-gradient(90deg, rgba(110,112,118,0.4) 0%, var(--gold) 50%, var(--forest) 100%);
   }
   .evo-header,
   .evo-row {
@@ -559,7 +559,7 @@
   }
   .evo-past {
     padding: 10px 16px;
-    background: rgba(15,59,46,0.035);
+    background: rgba(22,24,31,0.035);
     border-left: 2px solid var(--rule-2);
     border-radius: 0 2px 2px 0;
     color: var(--ink-3);
@@ -718,7 +718,7 @@
   .product-card .ptags span {
     font-size: 11px;
     padding: 3px 9px;
-    background: rgba(15,59,46,0.07);
+    background: rgba(22,24,31,0.07);
     color: var(--forest-2);
     border-radius: 10px;
     letter-spacing: 0.02em;
@@ -731,9 +731,9 @@
   }
   .product-card.device .pcat { color: var(--gold); }
   .product-card.device .pname { color: var(--bg); }
-  .product-card.device .pdesc { color: rgba(246,241,230,0.85); }
-  .product-card.device .ptags { border-top-color: rgba(246,241,230,0.2); }
-  .product-card.device .ptags span { background: rgba(184,144,74,0.2); color: var(--gold); }
+  .product-card.device .pdesc { color: rgba(250,248,244,0.85); }
+  .product-card.device .ptags { border-top-color: rgba(250,248,244,0.2); }
+  .product-card.device .ptags span { background: rgba(156,127,66,0.2); color: var(--gold); }
   .shop-only-badge {
     position: absolute;
     top: 12px; right: 12px;
@@ -775,7 +775,7 @@
     transition: background 0.2s;
     position: relative;
   }
-  .acc-head:hover { background: rgba(15,59,46,0.035); }
+  .acc-head:hover { background: rgba(22,24,31,0.035); }
   .acc-head .tier-num {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -1012,11 +1012,11 @@
     color: var(--bg);
     margin-bottom: 14px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(184,144,74,0.35);
+    border-bottom: 1px solid rgba(156,127,66,0.35);
   }
   .home-card ol {
     margin-left: 18px;
-    color: rgba(246,241,230,0.88);
+    color: rgba(250,248,244,0.88);
     font-size: 14px;
   }
   .home-card ol li { margin-bottom: 6px; line-height: 1.6; }
@@ -1025,7 +1025,7 @@
   /* Compliance footer */
   .compliance {
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     padding: 40px 36px;
     margin-top: 60px;
     border-radius: 2px;
@@ -1033,11 +1033,11 @@
   .compliance h3 {
     color: var(--gold);
     margin-bottom: 16px;
-    border-bottom: 1px solid rgba(184,144,74,0.4);
+    border-bottom: 1px solid rgba(156,127,66,0.4);
     padding-bottom: 10px;
   }
   .compliance p {
-    color: #F6F1E6;
+    color: #FAF8F4;
     font-size: 14.5px;
     font-weight: 400;
     line-height: 1.85;
@@ -1048,7 +1048,7 @@
     font-weight: 700;
   }
   .compliance p em {
-    color: #F6F1E6;
+    color: #FAF8F4;
     font-style: italic;
     opacity: 0.95;
   }
@@ -1060,8 +1060,8 @@
   }
   .compliance .lang > div {
     padding: 18px 22px;
-    background: rgba(246,241,230,0.07);
-    border: 0.5px solid rgba(184,144,74,0.25);
+    background: rgba(250,248,244,0.07);
+    border: 0.5px solid rgba(156,127,66,0.25);
     border-radius: 2px;
   }
   .compliance .lang h4 {
@@ -1070,7 +1070,7 @@
     letter-spacing: 0.1em;
     margin-bottom: 12px;
     padding-bottom: 8px;
-    border-bottom: 0.5px solid rgba(184,144,74,0.3);
+    border-bottom: 0.5px solid rgba(156,127,66,0.3);
   }
   .compliance .lang ul {
     margin: 0 0 0 18px;
@@ -1078,7 +1078,7 @@
     list-style: disc;
   }
   .compliance .lang li {
-    color: #F6F1E6;
+    color: #FAF8F4;
     font-size: 13.5px;
     font-weight: 400;
     line-height: 1.75;
@@ -1148,19 +1148,19 @@
     font-size: 10px;
     letter-spacing: 0;
   }
-  .eff-badge.delivery  { background: rgba(15,59,46,0.10);  color: var(--forest);   border-color: rgba(15,59,46,0.25); }
+  .eff-badge.delivery  { background: rgba(22,24,31,0.10);  color: var(--forest);   border-color: rgba(22,24,31,0.25); }
   .eff-badge.delivery::before  { content: "▲ "; }
-  .eff-badge.cleanse   { background: rgba(161,78,53,0.10); color: var(--clay);     border-color: rgba(161,78,53,0.25); }
+  .eff-badge.cleanse   { background: rgba(198,43,54,0.10); color: var(--clay);     border-color: rgba(198,43,54,0.25); }
   .eff-badge.cleanse::before   { content: "○ "; }
-  .eff-badge.condition { background: rgba(107,138,90,0.15);color: #3D5A2A;         border-color: rgba(107,138,90,0.35); }
+  .eff-badge.condition { background: rgba(47,107,79,0.15);color: #2F6B4F;         border-color: rgba(47,107,79,0.35); }
   .eff-badge.condition::before { content: "◇ "; }
-  .eff-badge.nourish   { background: rgba(184,144,74,0.18);color: var(--gold-2);   border-color: rgba(184,144,74,0.40); }
+  .eff-badge.nourish   { background: rgba(156,127,66,0.18);color: var(--gold-2);   border-color: rgba(156,127,66,0.40); }
   .eff-badge.nourish::before   { content: "● "; }
-  .eff-badge.hydrate   { background: rgba(46,122,94,0.13); color: var(--forest-2); border-color: rgba(46,122,94,0.35); }
+  .eff-badge.hydrate   { background: rgba(30,99,176,0.10); color: #1E63B0; border-color: rgba(30,99,176,0.30); }
   .eff-badge.hydrate::before   { content: "◆ "; }
-  .eff-badge.soothe    { background: rgba(184,144,74,0.10);color: var(--gold-2);   border-color: rgba(184,144,74,0.25); }
+  .eff-badge.soothe    { background: rgba(156,127,66,0.10);color: var(--gold-2);   border-color: rgba(156,127,66,0.25); }
   .eff-badge.soothe::before    { content: "◎ "; }
-  .eff-badge.massage   { background: rgba(161,78,53,0.08); color: var(--clay);     border-color: rgba(161,78,53,0.22); }
+  .eff-badge.massage   { background: rgba(198,43,54,0.08); color: var(--clay);     border-color: rgba(198,43,54,0.22); }
   .eff-badge.massage::before   { content: "☐ "; }
 
   /* Keyword pills rendered inside each product accordion header */
@@ -1174,8 +1174,8 @@
     font-size: 12px;
     padding: 4px 11px;
     background: transparent;
-    color: var(--forest-2);
-    border: 0.5px solid var(--forest-2);
+    color: var(--gold-2);
+    border: 0.5px solid var(--gold-2);
     border-radius: 2px;
     font-weight: 500;
     letter-spacing: 0.01em;
@@ -1532,7 +1532,7 @@
   /* ── Etymology dark composite (from Microjection_Skin-care) ── */
   .etym-dark {
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     border-radius: 3px;
     padding: 32px 24px;
     margin: 24px 0;
@@ -1558,16 +1558,16 @@
     font-size: 11.5px;
     font-weight: 300;
     letter-spacing: 0.02em;
-    color: rgba(246, 241, 230, 0.62);
+    color: rgba(250, 248, 244, 0.62);
     margin-top: 4px;
   }
   .etym-dark .ed-eq {
     margin-top: 22px;
     padding-top: 20px;
-    border-top: 1px solid rgba(246, 241, 230, 0.18);
+    border-top: 1px solid rgba(250, 248, 244, 0.18);
     font-size: 14px;
     line-height: 1.85;
-    color: rgba(246, 241, 230, 0.9);
+    color: rgba(250, 248, 244, 0.9);
     text-align: center;
   }
   .etym-dark .ed-eq b { color: #fff; }
@@ -1597,7 +1597,7 @@
   .prod-tag.brown   { background: #7A4A1E; }
   .prod-tag.powder  { background: #71747B; }
   .prod-tag.gel     { background: #A9763F; }
-  .prod-tag.liquid  { background: var(--forest-2); }
+  .prod-tag.liquid  { background: #1E63B0; }
   .prod-tag.cleanse { background: var(--moss); }
 
   /* ── Instagram caption cards ── */
@@ -1622,7 +1622,7 @@
     letter-spacing: 0.12em;
     font-weight: 700;
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     padding: 3px 9px;
     border-radius: 2px;
   }
@@ -1656,7 +1656,7 @@
   .cap-btn {
     margin-left: auto;
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     border: 0;
     border-radius: 2px;
     font-family: inherit;
@@ -1686,7 +1686,7 @@
     bottom: 34px;
     transform: translateX(-50%) translateY(14px);
     background: var(--forest);
-    color: #F6F1E6;
+    color: #FAF8F4;
     font-size: 13px;
     padding: 11px 24px;
     border-radius: 24px;
